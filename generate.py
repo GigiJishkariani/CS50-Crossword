@@ -257,7 +257,7 @@ def main():
     # Parse command-line arguments
     structure = args[0]
     words = args[1]
-    output = args[2] if len(sys.argv) == 4 else None
+    output = args[2] if len(args) == 3 else None
 
     # Generate crossword
     crossword = Crossword(structure, words)
